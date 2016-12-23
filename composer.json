@@ -1,0 +1,31 @@
+{
+    "require": {
+        "symfony/debug": "^2.7",
+        "silex/silex": "^1.3",
+        "symfony/console": "^2.7",
+        "chh/cache-service-provider": "~1.1",
+        "silex/web-profiler": "~1.0",
+        "twig/twig": "~1.22",
+        "doctrine/dbal": "~2.5",
+        "symfony/security": "~2.7",
+        "symfony/form": "~2.7",
+        "symfony/translation": "~2.7",
+        "symfony/config": "~2.7",
+        "symfony/validator": "~2.7",
+        "dezull/dbal-paginator-service-provider": "dev-master",
+        "ramsey/uuid": "~3.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Cards\\Composer\\Script::install"
+        ],
+        "post-update-cmd": [
+            "Cards\\Composer\\Script::install"
+        ]
+    },
+    "autoload": {
+        "psr-0": {
+            "Cards": "src/"
+        }
+    }
+}
